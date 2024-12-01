@@ -15,12 +15,22 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="shortcut icon" href="https://png.pngtree.com/png-vector/20190302/ourmid/pngtree-vector-vacuum-cleaner-icon-png-image_745619.jpg" type="image/x-icon">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DN67PNJWWY"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-DN67PNJWWY');
+    </script>
+
 </head>
 <body>
     <h1 class="animate__animated animate__bounce">Scrap Pet 🐱</h1>
     <form id="scrapeForm" class="form-container animate__animated animate__zoomIn">
         <label for="url">Enter URL:</label>
-        <input type="text" id="url" name="url" required placeholder="https://example.com">
+        <input type="url" id="url" name="url" required placeholder="https://example.com">
         <button type="submit" id="submitBtn">
             <span id="spinner">.</span>
             Scrape
@@ -28,14 +38,14 @@
     </form>
     <div id="result">
         <p>
-            <b>Title:</b> <span id="title"></span>
+            <b>Title:</b> <span id="title"></span> <span id="s_code"></span>
         </p>
         <textarea id="htmlContent" readonly></textarea>
         <button class="copy-btn" id="copyBtn">Copy to Clipboard</button>
     </div>
     <footer>
-        <p>Developed by <strong>Sriram Rajagopalan</strong>. Visit my site: 
-            <a href="https://sriraj66.github.io" target="_blank">sriraj66.github.io</a>
+        <p>Developed by 
+            <a href="https://sriraj66.github.io"  target="_blank"><strong class="animate__animated animate__bounce" >Sriram Rajagopalan</strong></a>
         </p>
     </footer>
 

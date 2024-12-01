@@ -32,7 +32,7 @@ form.addEventListener('submit', async (e) => {
 
         titleElem.textContent = title;
         htmlContent.textContent = bodyContent;
-
+        document.getElementById("s_code").innerText = " [ 200 OK ]"
         resultDiv.style.display = 'block';
     } catch (err) {
         alert("The Website is Protected");
