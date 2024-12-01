@@ -7,6 +7,10 @@ const app = express();
 app.use(express.json());
 app.use(express.static(path.resolve("public")));
 
+app.get("/check", (req, res) => {
+    res.send("Hello World")
+})
+
 app.post("/scrape", async (req, res) => {
     let { url } = req.body;
 
