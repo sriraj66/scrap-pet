@@ -86,6 +86,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Developer**: Sriram Rajagopalan  
 - **Portfolio**: [https://sriraj66.github.io](https://sriraj66.github.io)  
-- **Instagram**: [@sriramrajagopalan](#)  
+- **Instagram**: [@_srii_6](https://www.instagram.com/_srii_6/)  
 
 Feel free to reach out with feedback or suggestions! 😊
