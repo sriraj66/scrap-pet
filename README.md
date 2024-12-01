@@ -10,7 +10,6 @@ Developed by **Sriram Rajagopalan**, Scrap Pet is ideal for quick web content an
 ## Features
 
 - **Responsive Design**: Adapts seamlessly to both desktop and mobile devices.
-- **Dynamic Scraping**: Extracts the page title, HTML content, and additional metadata like response time and size.
 - **Copy to Clipboard**: Easily copy extracted HTML content with a single click.
 - **SEO Optimized**: Enhanced meta tags for better discoverability and sharing.
 - **Spinner Feedback**: Displays a loading spinner while processing the scrape request.
@@ -22,7 +21,6 @@ Developed by **Sriram Rajagopalan**, Scrap Pet is ideal for quick web content an
 
 ### Prerequisites
 
-- A local or hosted server capable of handling POST requests at the `/scrape` endpoint.
 - Basic knowledge of web development to customize or extend the functionality.
 
 ### Installation
@@ -31,10 +29,9 @@ Developed by **Sriram Rajagopalan**, Scrap Pet is ideal for quick web content an
    ```bash
    git clone https://github.com/sriraj66/scrap-pet.git
    cd scrap-pet
-   npm i
-   node server.js
+   index.html
    ```
-2. Open the `http://localhost:3000` URL in your browser or deploy it to your server.
+2. Open the `index.html` file in your browser or deploy it to your server.
 
 ---
 
@@ -56,7 +53,6 @@ When you scrape a URL, the result will display:
 
 - **Title**: Example Title  
 - **Code**: `[ 200 OK ]`
-- **Metadata**: `[ 123 ms, 45 KB ]`
 - **HTML Content**:
   ```html
   <!DOCTYPE html>
