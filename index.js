@@ -1,5 +1,5 @@
 import express from "express";
-import { scrapper } from "./src/scrapper.js";
+import { init, scrapper } from "./src/scrapper.js";
 import path from "path";
 
 const app = express();
@@ -9,6 +9,17 @@ app.use(express.static(path.resolve("public")));
 
 app.get("/check", (req, res) => {
     res.send("Hello World")
+})
+
+let is_init = false;
+
+app.get("/init", async(req, res) => {
+    if (is_init==false) {
+        await init()
+        is_init = true
+    }
+
+    res.send("Browser Inited")
 })
 
 app.post("/scrape", async (req, res) => {

@@ -2,11 +2,10 @@
   "name": "scrapper",
   "version": "1.0.0",
   "description": "Tool to get the page HTML",
-  "main": "server.js",
+  "main": "index.js",
   "type": "module",
   "scripts": {
-    "start": "node server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js"
   },
   "author": "Sriram",
   "license": "MIT",

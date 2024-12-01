@@ -1,16 +1,20 @@
 import { launch } from "puppeteer";
 import { flags, ignoreFlags } from "./flags.js";
 
-console.warn("Launching Browser");
 
-let browser = await launch({
-    headless: true,
-    timeout: 6 * 1000,
-    args: flags,
-    ignoreDefaultArgs: ignoreFlags,
-});
-
+let browser = undefined;
+export async function init() {
+    console.warn("Launching Browser");
+    browser = await launch({
+        headless: true,
+        timeout: 6 * 1000,
+        args: flags,
+        ignoreDefaultArgs: ignoreFlags,
+    });
+}
 export async function scrapper(url) {
+    if (browser==undefined) return {}
+
     let context = await browser.createBrowserContext();    
     try {
         let page = await context.newPage();
